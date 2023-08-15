@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    {#    TODO 三种方式引入静态文件 #}
+
+{#    相对路径#}
+{#    <link rel="stylesheet" href="../static/index.css">#}
+{#    从项目根目录开始#}
+{#    <link rel="stylesheet" href="/static/index.css">#}
+{#    url#}
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <h1>hello world</h1>
+    HAH
+    <lable>{{ name }}</lable>
+</body>
+</html>
